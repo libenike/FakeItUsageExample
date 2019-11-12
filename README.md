@@ -29,7 +29,7 @@ cmake --install build_
 
 ```
 cd ../FakeItUsageExample/
-cmake -S . -B build -DFakeIt_DIR=../FakeIt/install/share/FakeIt/cmake/
+cmake -S . -B build -DFakeIt_DIR=../FakeIt/install/lib/cmake/FakeIt/
 cmake --build build/
 ```
 
