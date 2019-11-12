@@ -16,23 +16,21 @@ Now to build this project, you must follow these steps:
 
 3) Cd to FakeIt and build it.
 
-`cd FakeIt`
-
-`git checkout feature/add_cmake_support`
-
-`cmake -S . -B build_ -DCMAKE_INSTALL_PREFIX=install`
-
-`cmake --build build_`
-
-`cmake --install build_`
+```
+cd FakeIt
+git checkout feature/add_cmake_support
+cmake -S . -B build_ -DCMAKE_INSTALL_PREFIX=install
+cmake --build build_
+cmake --install build_
+```
 
 
 4) Cd to the project and build.
 
-`cd ../FakeItUsageExample/`
-
-`cmake -S . -B build -DFakeIt_DIR=../FakeIt/install/share/FakeIt/cmake/`
-
-`cmake --build build/`
+```
+cd ../FakeItUsageExample/
+cmake -S . -B build -DFakeIt_DIR=../FakeIt/install/share/FakeIt/cmake/
+cmake --build build/
+```
 
 As a result, this project has been built without errors.
